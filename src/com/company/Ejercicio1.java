@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio1 {
     public static void main(String[] args) {
 
-
+        // Crea array con filas y columnas introducidas por usuario y con valores introducidos por usuario
         Scanner escaneado = new Scanner(System.in);
         System.out.println("Introduzca el numero de filas del array");
         int filas = escaneado.nextInt();
@@ -20,7 +20,7 @@ public class Ejercicio1 {
         }
 
 
-
+        //Imprime el array hecho
         for (int i = 0; i < filas; i++) {
 
             for (int j = 0; j < columnas; j++) {
@@ -30,6 +30,8 @@ public class Ejercicio1 {
         System.out.println();
 
 
+
+        //Editor de un elemento del array
         System.out.println("Ahora que esta creado el Array elige la posicion que deseas cambiar");
         System.out.println();
         System.out.println("Selecciona el numero de fila");
@@ -41,7 +43,7 @@ public class Ejercicio1 {
         array[filaUsuario][columnaUsuario]= numeroUsuario;
 
 
-
+        //Lector del array con el elemento cambiado
         for (int i = 0; i < filas; i++) {
 
             for (int j = 0; j < columnas; j++) {

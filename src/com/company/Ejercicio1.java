@@ -11,7 +11,7 @@ public class Ejercicio1 {
         int filas = escaneado.nextInt();
         System.out.println("Introduzca el numero de columnas array");
         int columnas = escaneado.nextInt();
-        int array[][] = new int[filas][columnas];
+        int [][] array = new int[filas][columnas];
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
                 System.out.print("A[" + i + "][" + j + "]= ");

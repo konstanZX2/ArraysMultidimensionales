@@ -16,8 +16,6 @@ public class Ejercicio1deVerdad {
         }
         System.out.println("Introduce el numero de la columna del Array que quieras cambiar");
         int filaDelArray = escaneado.nextInt();
-        int numeroDeseadoPorElUsuario= ;
-        array[filaDelArray]=
         for (int i = 0; i < array.length; i++) {
 
         }

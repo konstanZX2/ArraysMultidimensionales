@@ -44,7 +44,7 @@ public class Ejercicio1 {
 
 
 
-        //Lector del array con el elemento cambiado
+        //Imprime array con el elemento cambiado
         for (int i = 0; i < filas; i++) {
 
             for (int j = 0; j < columnas; j++) {

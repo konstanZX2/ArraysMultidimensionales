@@ -25,14 +25,31 @@ public class Ejercicio1 {
 
             for (int j = 0; j < columnas; j++) {
                 System.out.println("array[" + i + "][" + j + "]=" + array[i][j]);
-                System.out.println(" ");
             }
         }
         System.out.println();
 
 
         System.out.println("Ahora que esta creado el Array elige la posicion que deseas cambiar");
-        array[][];
+        System.out.println();
+        System.out.println("Selecciona el numero de fila");
+        int filaUsuario=escaneado.nextInt();
+        System.out.println("Selecciona el numero de columna");
+        int columnaUsuario= escaneado.nextInt();
+        System.out.println("Selecciona el valor que vas a colocar en esa posicion");
+        int numeroUsuario=escaneado.nextInt();
+        array[filaUsuario][columnaUsuario]= numeroUsuario;
+
+
+
+        for (int i = 0; i < filas; i++) {
+
+            for (int j = 0; j < columnas; j++) {
+                System.out.println("array[" + i + "][" + j + "]=" + array[i][j]);
+            }
+        }
+        System.out.println();
+
     }
 }
 

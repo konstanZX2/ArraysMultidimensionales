@@ -14,9 +14,23 @@ public class Ejercicio1deVerdad {
             array[i] = escaneado.nextInt();
 
         }
-        System.out.println("Introduce el numero de la columna del Array que quieras cambiar");
-        int filaDelArray = escaneado.nextInt();
-        for (int i = 0; i < array.length; i++) {
+        int lugarDelNumeroDelArray;
+        System.out.println("Introduce el numero de la posicion del Array que quieras cambiar");
+        do {
+            lugarDelNumeroDelArray = escaneado.nextInt();
+            if (lugarDelNumeroDelArray> tamañoArray){
+                System.out.println("introduce un numero distinto xd");}
+        }while (lugarDelNumeroDelArray> tamañoArray-1);
+
+        int numeroDelArray = array[lugarDelNumeroDelArray-1];
+        for (int i = lugarDelNumeroDelArray; i < array.length; i++) {
+            array[i-1]=array[i];
+
+
+        }
+        array[tamañoArray-1]= numeroDelArray;
+        for (int i = 0; i < tamañoArray; i++) {
+            System.out.println(array[i]);
 
         }
     }

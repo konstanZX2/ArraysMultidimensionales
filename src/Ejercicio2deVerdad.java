@@ -19,7 +19,8 @@ public class Ejercicio2deVerdad {
         for (int i = 0; i < tamañoArray; i++) {
             for (int j = i+1; j < tamañoArray; j++) {
                 if (array[i]==array[j]){
-                    numeroDuplicado += array[j];
+                    numeroDuplicado = array[j];
+                    System.out.println(array[j]);
                     numerosDuplicados +=1;
 
             }

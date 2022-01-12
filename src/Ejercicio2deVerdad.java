@@ -16,20 +16,27 @@ public class Ejercicio2deVerdad {
         }
         int numeroDuplicado = 0;
         int numerosDuplicados = 0;
+        System.out.println("EEEESTos son los numeros ke se repiten en el arrai");
         for (int i = 0; i < tamañoArray; i++) {
-            for (int j = i+1; j < tamañoArray; j++) {
-                if (array[i]==array[j]){
+            for (int j = i + 1; j < tamañoArray; j++) {
+                if (array[i] == array[j]) {
+                    numerosDuplicados += 1;
                     numeroDuplicado = array[j];
-                    System.out.println(array[j]);
-                    numerosDuplicados +=1;
+                    System.out.print(numeroDuplicado+ " ");
+                    break;
+                }
 
             }
-        }
-        }
-        System.out.println("Los numeros duplicados son "+numeroDuplicado);
-        System.out.println("En total ="+numerosDuplicados);
 
 
+        }
+
+        System.out.println("En total =" + numerosDuplicados);
     }
 }
+
+
+
+
+
 
